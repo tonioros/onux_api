@@ -20,7 +20,13 @@
 	include_once(TPATH_CLASS .'Imagecrop.class.php');
 	include_once(TPATH_CLASS .'twilio/Services/Twilio.php');
 	include_once('generalFunctions.php');
-	include_once('send_invoice_receipt.php');  
+	include_once('send_invoice_receipt.php'); 
+
+
+	echo("------ Inicio Variable REQUEST ------");
+	var_dump(json_encode($_REQUEST));
+	echo("------ fin Variable REQUEST ------");
+
 	$PHOTO_UPLOAD_SERVICE_ENABLE = "Yes";
 	$host_arr = array();
 	$host_arr = explode(".",$_SERVER["HTTP_HOST"]);
